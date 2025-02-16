@@ -124,22 +124,27 @@ input[type="submit"]:active {
     </style>
 </head>
 <body>
-	<form name=fm1 action="AddInfoServlet" method="post" onsubmit="return validate()">
-		
-		<label for="did">Destination Id : </label>
-		<input type="number" name="did" id="did" required/>
-		
-		<label for="dname">Destination Name : </label>
-		<input type="text" name="dname" id="dname" required/>
-		
-		<label for="ddis">Destination Decription : </label>
-		<input type="text" name="ddis" id="ddis" required/>
+	<form name="fm1" action="AddInfoServlet" method="post" enctype="multipart/form-data" onsubmit="return validate()">
+    
+    <label for="did">Destination Id:</label>
+    <input type="number" name="did" id="did" required />
+
+    <label for="dname">Destination Name:</label>
+    <input type="text" name="dname" id="dname" required />
+
+    <label for="ddis">Destination Description:</label>
+    <input type="text" name="ddis" id="ddis" required />
+
+    <label for="dprice">Destination Price:</label>
+    <input type="number" name="dprice" id="dprice" required />
+
+    <label for="file">Choose an image:</label>
+    <input type="file" name="file" id="file" required />
+
+    <input type="submit" value="Add Destination" />
+
+</form>
+
 	
-		<label for="dprice">Destination Price : </label>
-		<input type="number" name="dprice" id="dprice" required/>
-		
-		<input type="submit" value="Add Destination" />
-	
-	</form>
 </body>
 </html>

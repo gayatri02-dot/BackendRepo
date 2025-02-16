@@ -90,6 +90,8 @@
                     <strong>Destination Description :</strong> <%=Desti.getDdis() %> | 
                     <strong>Destination Price :</strong> <%=Desti.getDprice() %> | 
                 </li>
+                <img src="GetImageServlet?imageId1=<%= Desti.getDid() %>" alt="Destination Image" width="200">
+                
             <% } %>
         </ul>
     </div>
