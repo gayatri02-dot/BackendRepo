@@ -60,7 +60,7 @@
 /* Question Style */
 #search-question {
 	margin-top: 50px;
-    font-family: 'Lucida Handwriting', cursive;
+    font-family: 'Quicksand', sans-serif;
     color: black;
     font-size: 25px;
     margin-bottom: 35px;
@@ -69,10 +69,10 @@
 /* Search Box */
 .travelsearch {
 	
-    display: flex;
+    display: inline-flex;
     
     align-items: center;
-    
+    width:800px;
     padding: 10px;
     
 }
@@ -82,7 +82,7 @@
     outline: none;
     padding: 10px;
     font-size: 16px;
-    flex: 1;
+    width:600px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -94,6 +94,7 @@
     color: black;
     padding: 10px 20px;
     border-radius: 50px;
+    width:150px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -103,6 +104,29 @@
 #travel-search-button:hover {
     background: #ff8000;
 }
+.result h1{
+	font-family: 'Parisienne', cursive;
+	text-align: center;
+}
+#res{
+	display: inline-flex;
+	margin-top: 50px;
+	background-color : rgb(234, 192, 168);
+	padding-top: 20px;
+	padding-bottom : 20px;
+}
+.desti-info{
+	width: 600px;
+	text-align: center;
+}
+.desti-img-box{
+	float: right;
+	width:350px;
+}
+.desti-img{
+	border-radius: 30px;
+}
+
 
 
 
@@ -197,9 +221,7 @@
     box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.884);
     text-align: center;
 }
-.serv h5{
-    
-}
+
 #footer{
     margin-top: 200px;
     background-color: rgb(236, 175, 125);

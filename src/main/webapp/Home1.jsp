@@ -14,11 +14,11 @@
     <title>Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='Home1.css'>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body id="indexpage">
@@ -80,20 +80,23 @@
     if (destinations != null && !destinations.isEmpty()) {
 %>
     <div class="result">
-        <h2>Search Results:</h2>
-        
-        <ul>
-            <% for (DestiInfoBean Desti : destinations) { %>
-                <li>
-                    <strong>Destination ID :</strong> <%=Desti.getDid() %> | 
-                    <strong>Destination Name :</strong> <%=Desti.getDname() %> | 
-                    <strong>Destination Description :</strong> <%=Desti.getDdis() %> | 
-                    <strong>Destination Price :</strong> <%=Desti.getDprice() %> | 
-                </li>
-                <img src="GetImageServlet?imageId1=<%= Desti.getDid() %>" alt="Destination Image" width="200">
-                
-            <% } %>
-        </ul>
+        <h1>Search Results:</h1>
+    <% for (DestiInfoBean Desti : destinations) { %>
+    <div id="res">
+            <div class="desti-info">
+                <h2 class="desti-name"><%=Desti.getDname() %></h2>
+                <p><strong>ID:</strong> <%=Desti.getDid() %></p>
+                <p><strong>Description:</strong> <%=Desti.getDdis() %></p>
+                <p><strong>Price:</strong> <span class="desti-price">$<%=Desti.getDprice() %></span></p>
+                <button class="book-btn">Book</button>
+            </div>
+            <div class="desti-img-box">
+                <img src="GetImageServlet?imageId1=<%= Desti.getDid() %>" 
+                     alt="Destination Image" class="desti-img">
+            </div>
+    </div>
+    <% } %>
+
     </div>
 <%
     } else if (destinations == null) {
