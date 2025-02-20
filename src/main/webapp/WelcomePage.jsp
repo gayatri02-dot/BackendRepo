@@ -7,14 +7,26 @@
 <title>Welcome paage</title>
 <style>
 	body {
-    background-image: url("AllImages/maple leaf drop.gif");
-    background-repeat: no-repeat;
-    background-size:100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
 </style>
 </head>
 <body>
-	
+	<video class="video-bg" autoplay muted loop>
+    <source src="AllImages/background_v2.mp4" type="video/mp4">
+</video>
 </body>
 </html>
