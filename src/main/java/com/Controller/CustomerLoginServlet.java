@@ -39,8 +39,8 @@ public class CustomerLoginServlet extends HttpServlet {
 		
 		PrintWriter out = response.getWriter();
 		
-		RequestDispatcher rd1 = request.getRequestDispatcher("Home1.html");
-		RequestDispatcher rd2 = request.getRequestDispatcher("Index1.html");
+		RequestDispatcher rd1 = request.getRequestDispatcher("Home1.jsp");
+		RequestDispatcher rd2 = request.getRequestDispatcher("Index1.jsp");
 			
 		
 		

@@ -10,11 +10,11 @@ import com.Util.DBConnection;
 
 public class CustLoginDao {
 	public String custauthrLogin(CustLoginBean obj) throws SQLException, ClassNotFoundException {
-		System.out.println("dao called");
+		
 		String uname = obj.getUsername();
-		System.out.println(uname);
+		
 		String upwd = obj.getPassword();
-		System.out.println(upwd);
+		
 		
 		Connection con = DBConnection.getDataConnection();
 		
