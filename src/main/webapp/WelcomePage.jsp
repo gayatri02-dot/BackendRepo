@@ -73,6 +73,7 @@ color: black;
                 
             })
             $("#toggle-text").css("cursor","pointer");
+            $(".buttons").css("display", "none")
         });
         
     </script>
